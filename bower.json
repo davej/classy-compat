@@ -1,0 +1,30 @@
+{
+  "name": "classy-compat",
+  "version": "1.0.0",
+  "authors": [
+    "Dave Jeffery <dave@davejeffery.com>"
+  ],
+  "description": "Use pre-1.0 style Classy controllers with Angular Classy 1.0+",
+  "main": "classy-compat.js",
+  "keywords": [
+    "classy-plugin",
+    "angularjs",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular-classy": "^1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.2"
+  }
+}

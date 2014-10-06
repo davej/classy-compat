@@ -21,7 +21,6 @@
           if (!__hasProp.call(classObj, key)) continue;
           fn = classObj[key];
           if (angular.isFunction(fn) && !(__indexOf.call(this.options.ignore, key) >= 0)) {
-            console.log(classConstructor.prototype[key]);
             classConstructor.prototype[key] = void 0;
             _results.push(classConstructor.prototype[this.options.methodsKeyName][key] = fn);
           } else {

@@ -1,6 +1,4 @@
-angular.module('classy-compat', ['classy-core']).classy.plugin.controller
-  name: 'compat'
-  
+angular.module('classy.compat', ['classy.core']).classy.plugin.controller
   options:
     enabled: true
     ignore: ['constructor', 'init', 'data']

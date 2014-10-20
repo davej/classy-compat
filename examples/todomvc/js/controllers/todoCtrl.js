@@ -67,20 +67,24 @@ todomvc.classy.controller({
 		this.$scope.doneEditing(this.$scope.originalTodo);
 	},
 
-	removeTodo: function (todo) {
-		this.$.todos.splice(this.$.todos.indexOf(todo), 1);
-	},
+	methods: {
+		// Putting a few methods in the `methods` object to demonstrate both
+		// backwards *and* forwards compatibility.
+		removeTodo: function (todo) {
+			this.$.todos.splice(this.$.todos.indexOf(todo), 1);
+		},
 
-	clearCompletedTodos: function () {
-		this.$.todos = this.$.todos.filter(function (val) {
-			return !val.completed;
-		});
-	},
+		clearCompletedTodos: function () {
+			this.$.todos = this.$.todos.filter(function (val) {
+				return !val.completed;
+			});
+		},
 
-	markAll: function (completed) {
-		this.$.todos.forEach(function (todo) {
-			todo.completed = completed;
-		});
+		markAll: function (completed) {
+			this.$.todos.forEach(function (todo) {
+				todo.completed = completed;
+			});
+		}
 	}
 
 });

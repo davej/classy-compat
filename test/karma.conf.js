@@ -5,7 +5,7 @@ module.exports = function(config) {
     files: [
 	    'bower_components/angular/angular.js',
 		  'bower_components/angular-classy/angular-classy.js',
-      'classy-compat.js',
+      'compat.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'examples/todomvc/js/app.js',
       'examples/todomvc/js/*/*.js',
@@ -14,7 +14,7 @@ module.exports = function(config) {
     autoWatch: true,
     singleRun: true,
     browsers: [
-      'Firefox',
+      // 'Firefox',
       'PhantomJS'
     ]
   });

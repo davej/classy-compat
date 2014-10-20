@@ -3,8 +3,7 @@
   var __hasProp = {}.hasOwnProperty,
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-  angular.module('classy-compat', ['classy-core']).classy.plugin.controller({
-    name: 'compat',
+  angular.module('classy.compat', ['classy.core']).classy.plugin.controller({
     options: {
       enabled: true,
       ignore: ['constructor', 'init', 'data'],

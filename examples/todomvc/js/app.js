@@ -7,4 +7,4 @@
  *
  * @type {angular.Module}
  */
-var todomvc = angular.module('todomvc', ['classy', 'classy-compat']);
+var todomvc = angular.module('todomvc', ['classy', 'classy.compat']);
